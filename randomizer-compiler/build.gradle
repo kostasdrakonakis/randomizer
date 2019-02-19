@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+apply from: '../gradle/compiler/bintrayUpload.gradle'
+
+dependencies {
+    implementation 'com.squareup:javapoet:1.11.1'
+    //implementation 'com.kostasdrakonakis:randomizer-annotations:1.0.0'
+    implementation project(':randomizer-annotations')
+}

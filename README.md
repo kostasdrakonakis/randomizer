@@ -1,4 +1,6 @@
-Randomizer [ ![Download](https://api.bintray.com/packages/kdrakonakis/maven/randomizer/images/download.svg) ](https://bintray.com/kdrakonakis/maven/randomizer/_latestVersion)
+Randomizer [ ![Download](https://api.bintray.com/packages/kdrakonakis/maven/randomizer/images/download.svg) ](https://bintray.com/kdrakonakis/maven/randomizer/_latestVersion) [![Build Status](https://travis-ci.org/kostasdrakonakis/randomizer.svg?branch=master)](https://travis-ci.org/kostasdrakonakis/randomizer)
+
+<p align="center"><a href='https://ko-fi.com/Z8Z4XWSM' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></p>
 
 Initialize variables with Random values
 
@@ -10,14 +12,14 @@ Download the latest JAR or grab via Maven:
 <dependency>
   <groupId>com.kostasdrakonakis</groupId>
   <artifactId>randomizer</artifactId>
-  <version>1.2.4</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 ```xml
 <dependency>
   <groupId>com.kostasdrakonakis</groupId>
   <artifactId>randomizer-compiler</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 
@@ -25,14 +27,14 @@ or via Gradle:
 
 Java:
 ```groovy
-implementation 'com.kostasdrakonakis:randomizer:1.0.0'
-annotationProcessor 'com.kostasdrakonakis:randomizer-compiler:1.0.0'
+implementation 'com.kostasdrakonakis:randomizer:1.0.1'
+annotationProcessor 'com.kostasdrakonakis:randomizer-compiler:1.0.1'
 ```
 
 Kotlin:
 ```groovy
-implementation 'com.kostasdrakonakis:randomizer:1.0.0'
-kapt 'com.kostasdrakonakis:randomizer-compiler:1.0.0'
+implementation 'com.kostasdrakonakis:randomizer:1.0.1'
+kapt 'com.kostasdrakonakis:randomizer-compiler:1.0.1'
 ```
 Usage
 -----

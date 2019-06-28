@@ -7,7 +7,7 @@ import javax.lang.model.util.Types;
 
 class CharProperty extends RandomProperty {
 
-    public CharProperty(Element element) {
+    CharProperty(Element element) {
         super(element);
     }
 

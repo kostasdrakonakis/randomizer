@@ -9,7 +9,7 @@ import javax.lang.model.util.Types;
 
 class ShortProperty extends RandomProperty {
 
-    public ShortProperty(Element element) {
+    ShortProperty(Element element) {
         super(element);
     }
 

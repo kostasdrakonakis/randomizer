@@ -1,2 +1,1 @@
 include ':app', ':randomizer', ':randomizer-annotations', ':randomizer-compiler'
-enableFeaturePreview('STABLE_PUBLISHING')

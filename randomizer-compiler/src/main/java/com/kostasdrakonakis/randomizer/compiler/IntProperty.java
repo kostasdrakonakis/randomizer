@@ -13,7 +13,7 @@ class IntProperty extends RandomProperty {
     private int minValue;
     private int maxValue;
 
-    public IntProperty(Element element) {
+    IntProperty(Element element) {
         super(element);
         minValue = element.getAnnotation(RandomInt.class).minValue();
         maxValue = element.getAnnotation(RandomInt.class).maxValue();

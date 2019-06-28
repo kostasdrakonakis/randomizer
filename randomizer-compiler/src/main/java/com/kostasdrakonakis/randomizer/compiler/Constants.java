@@ -1,7 +1,6 @@
 package com.kostasdrakonakis.randomizer.compiler;
 
 class Constants {
-
     static final String PACKAGE_NAME = "com.kostasdrakonakis.randomizer";
     static final String GENERATED_CLASS_NAME = "Randomizer";
     static final String RANDOM_CLASS_SUFFIX = "_RANDOM_PROPERTY_BINDING";

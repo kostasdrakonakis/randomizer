@@ -9,12 +9,12 @@ import javax.lang.model.util.Types;
 
 abstract class RandomProperty {
     Element element;
-    Name qualifiedClassName;
-    Name simpleClassName;
-    Name elementName;
-    TypeMirror elementType;
+    private Name qualifiedClassName;
+    private Name simpleClassName;
+    private Name elementName;
+    private TypeMirror elementType;
 
-    public RandomProperty(Element element) {
+    RandomProperty(Element element) {
         this.element = element;
         elementName = element.getSimpleName();
         simpleClassName = element.getEnclosingElement().getSimpleName();

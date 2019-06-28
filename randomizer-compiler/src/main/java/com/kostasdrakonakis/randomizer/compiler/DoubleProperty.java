@@ -1,7 +1,6 @@
 package com.kostasdrakonakis.randomizer.compiler;
 
 import com.kostasdrakonakis.randomizer.annotations.RandomDouble;
-import com.kostasdrakonakis.randomizer.annotations.RandomFloat;
 
 import java.util.Random;
 
@@ -14,7 +13,7 @@ class DoubleProperty extends RandomProperty {
     private double minValue;
     private double maxValue;
 
-    public DoubleProperty(Element element) {
+    DoubleProperty(Element element) {
         super(element);
         minValue = element.getAnnotation(RandomDouble.class).minValue();
         maxValue = element.getAnnotation(RandomDouble.class).maxValue();

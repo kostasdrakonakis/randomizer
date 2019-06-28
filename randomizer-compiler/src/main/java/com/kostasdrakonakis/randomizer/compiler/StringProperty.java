@@ -17,7 +17,7 @@ class StringProperty extends RandomProperty {
 
     private boolean uuid;
 
-    public StringProperty(Element element) {
+    StringProperty(Element element) {
         super(element);
         uuid = element.getAnnotation(RandomString.class).uuid();
     }

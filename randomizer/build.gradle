@@ -34,8 +34,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    //api 'com.kostasdrakonakis:randomizer-annotations:1.0.0'
-    //androidTestAnnotationProcessor 'com.kostasdrakonakis:randomizer-compiler:1.0.0'
-    api project(':randomizer-annotations')
-    androidTestAnnotationProcessor project(':randomizer-compiler')
+    api 'com.kostasdrakonakis:randomizer-annotations:1.0.1'
+    androidTestAnnotationProcessor 'com.kostasdrakonakis:randomizer-compiler:1.0.1'
+//    api project(':randomizer-annotations')
+//    androidTestAnnotationProcessor project(':randomizer-compiler')
 }

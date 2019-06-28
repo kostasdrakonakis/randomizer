@@ -1,7 +1,6 @@
 package com.kostasdrakonakis.randomizer.compiler;
 
 import com.kostasdrakonakis.randomizer.annotations.RandomFloat;
-import com.kostasdrakonakis.randomizer.annotations.RandomInt;
 
 import java.util.Random;
 
@@ -14,7 +13,7 @@ class FloatProperty extends RandomProperty {
     private float minValue;
     private float maxValue;
 
-    public FloatProperty(Element element) {
+    FloatProperty(Element element) {
         super(element);
         minValue = element.getAnnotation(RandomFloat.class).minValue();
         maxValue = element.getAnnotation(RandomFloat.class).maxValue();

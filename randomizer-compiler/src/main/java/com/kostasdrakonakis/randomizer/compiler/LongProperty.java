@@ -11,7 +11,7 @@ class LongProperty extends RandomProperty {
     private long minValue;
     private long maxValue;
 
-    public LongProperty(Element element) {
+    LongProperty(Element element) {
         super(element);
         minValue = element.getAnnotation(RandomLong.class).minValue();
         maxValue = element.getAnnotation(RandomLong.class).maxValue();

@@ -1,5 +1,6 @@
 package com.kostasdrakonakis.randomizer.compiler;
 
+import com.google.auto.service.AutoService;
 import com.kostasdrakonakis.randomizer.annotations.RandomChar;
 import com.kostasdrakonakis.randomizer.annotations.RandomDouble;
 import com.kostasdrakonakis.randomizer.annotations.RandomFloat;
@@ -25,6 +26,7 @@ import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Filer;
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;
+import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
@@ -42,6 +44,7 @@ import static com.kostasdrakonakis.randomizer.compiler.Constants.PACKAGE_NAME;
 import static com.kostasdrakonakis.randomizer.compiler.Constants.RANDOM_CLASS_SUFFIX;
 import static com.kostasdrakonakis.randomizer.compiler.Constants.TARGET_STATEMENT_FORMAT;
 
+@AutoService(Processor.class)
 public class RandomizerProcessor extends AbstractProcessor {
 
     private Filer filer;

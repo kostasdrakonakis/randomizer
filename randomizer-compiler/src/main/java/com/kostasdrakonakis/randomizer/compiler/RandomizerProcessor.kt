@@ -73,15 +73,11 @@ class RandomizerProcessor : AbstractProcessor() {
     }
 
     override fun getSupportedAnnotationTypes(): Set<String> {
-        return linkedSetOf(
-            RandomInt::class.java.canonicalName,
-            RandomString::class.java.canonicalName,
-            RandomDouble::class.java.canonicalName,
-            RandomFloat::class.java.canonicalName,
-            RandomShort::class.java.canonicalName,
-            RandomLong::class.java.canonicalName,
-            RandomChar::class.java.canonicalName
-        )
+        val supportedAnnotationTypes: MutableSet<String> = linkedSetOf()
+        for (annotation in supportedAnnotations) {
+            supportedAnnotationTypes.add(annotation.canonicalName)
+        }
+        return supportedAnnotationTypes
     }
 
     override fun getSupportedSourceVersion(): SourceVersion {

@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
-        versionName libraryVersion
+        versionName version
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -34,8 +34,4 @@ dependencies {
     implementation "androidx.core:core-ktx:1.2.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     testImplementation 'junit:junit:4.13'
-    api 'com.kostasdrakonakis:randomizer-annotations:1.0.1'
-    androidTestAnnotationProcessor 'com.kostasdrakonakis:randomizer-compiler:1.0.1'
-//    api project(':randomizer-annotations')
-//    androidTestAnnotationProcessor project(':randomizer-compiler')
 }

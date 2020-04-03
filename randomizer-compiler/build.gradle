@@ -1,15 +1,17 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-kapt'
-
-apply from: '../gradle/compiler/bintrayUpload.gradle'
+apply from: 'bintrayUpload.gradle'
 
 dependencies {
     implementation 'com.squareup:javapoet:1.12.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    //implementation 'com.kostasdrakonakis:randomizer-annotations:1.0.1'
-    implementation project(':randomizer-annotations')
-
+    if (project.hasProperty("publishCompiler")) {
+        implementation "com.kostasdrakonakis:randomizer-annotations:$version"
+    } else {
+        println("Using project dependency for development")
+        implementation project(':randomizer-annotations')
+    }
     implementation 'com.google.auto:auto-common:0.10'
     compileOnly 'com.google.auto.service:auto-service-annotations:1.0-rc6'
     kapt 'com.google.auto.service:auto-service:1.0-rc6'

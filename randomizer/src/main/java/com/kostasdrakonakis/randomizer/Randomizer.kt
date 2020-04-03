@@ -58,7 +58,7 @@ object Randomizer {
             return bindingConstructor
         }
         val clsPackage = cls.getPackage() ?: return null
-        val clsName = clsPackage.name + "." + cls.simpleName
+        val clsName = "${clsPackage.name}.${cls.simpleName}"
         if (clsName.startsWith("android.") || clsName.startsWith("java.")) {
             if (debug) Log.d(TAG, "Reached framework class. No further.")
             return null

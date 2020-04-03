@@ -33,5 +33,6 @@ dependencies {
 //    implementation 'com.kostasdrakonakis:randomizer:1.0.0'
 //    annotationProcessor 'com.kostasdrakonakis:randomizer-compiler:1.0.0'
     implementation project(':randomizer')
+    implementation project(':randomizer-annotations')
     kapt project(':randomizer-compiler')
 }

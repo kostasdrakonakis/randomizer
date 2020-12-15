@@ -1,2 +1,9 @@
 apply plugin: 'java-library'
+apply plugin: 'kotlin'
 apply from: 'bintrayUpload.gradle'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'com.google.truth:truth:1.1'
+}

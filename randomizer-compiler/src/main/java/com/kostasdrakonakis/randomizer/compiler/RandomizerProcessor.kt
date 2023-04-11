@@ -65,8 +65,8 @@ class RandomizerProcessor : AbstractProcessor() {
                 JavaFile.builder(Constants.PACKAGE_NAME, navigatorClass.build())
                     .build()
                     .writeTo(filer)
-            } catch (ex: FilerException) {
-            } catch (e: IOException) {
+            } catch (_: FilerException) {
+            } catch (_: IOException) {
             }
         }
         return false

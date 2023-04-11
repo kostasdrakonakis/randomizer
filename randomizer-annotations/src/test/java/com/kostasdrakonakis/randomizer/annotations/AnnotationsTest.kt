@@ -16,11 +16,11 @@ class AnnotationsTest : BaseAnnotationTest() {
         annotations<RandomChar>().forEach {
             val annotation = it.name
             val targetAnnotation = it.annotation<Target>()?.value
-            if (targetAnnotation?.isNullOrEmpty() == true) {
+            if (targetAnnotation?.isEmpty() == true) {
                 fail("Annotation: $annotation either does not have @Target annotation " +
                     "declared or not specified target value")
             }
-            val target = targetAnnotation[0]
+            val target = targetAnnotation?.get(0)
             when (it.canonicalName) {
                 annotation<RandomChar>(),
                 annotation<RandomDouble>(),

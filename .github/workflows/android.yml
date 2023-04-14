@@ -1,4 +1,4 @@
-name: Android CI
+name: Randomizer Build
 
 on:
   push:

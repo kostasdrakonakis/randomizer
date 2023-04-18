@@ -16,6 +16,6 @@ internal class CharProperty(element: Element?) : RandomProperty(element!!) {
         get() {
             val rnd = (Math.random() * 52).toInt()
             val base = if (rnd < 26) 'A' else 'a'
-            return (base.toInt() + rnd % 26).toChar()
+            return (base.code + rnd % 26).toChar()
         }
 }

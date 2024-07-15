@@ -19,7 +19,7 @@ dependencies {
     compileOnly 'net.ltgt.gradle.incap:incap:1.0.0'
     kapt 'net.ltgt.gradle.incap:incap-processor:1.0.0'
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'com.google.truth:truth:1.4.3'
+    testImplementation 'com.google.truth:truth:1.4.4'
     testImplementation 'com.google.testing.compile:compile-testing:0.21.0'
 }
 

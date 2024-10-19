@@ -23,6 +23,10 @@ dependencies {
     testImplementation 'com.google.testing.compile:compile-testing:0.21.0'
 }
 
+kotlin {
+    jvmToolchain(21)
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_21
     targetCompatibility = JavaVersion.VERSION_21

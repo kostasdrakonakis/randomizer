@@ -9,6 +9,10 @@ dependencies {
     testImplementation 'com.google.truth:truth:1.4.4'
 }
 
+kotlin {
+    jvmToolchain(21)
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_21
     targetCompatibility = JavaVersion.VERSION_21

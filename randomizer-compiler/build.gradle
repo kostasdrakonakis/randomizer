@@ -11,16 +11,16 @@ dependencies {
         println("Using project dependency for development")
         implementation project(':randomizer-annotations')
     }
-    implementation 'com.google.guava:guava:33.4.0-jre'
-    testImplementation 'com.google.guava:guava:33.4.0-jre'
+    implementation 'com.google.guava:guava:33.5.0-jre'
+    testImplementation 'com.google.guava:guava:33.5.0-jre'
     implementation 'com.google.auto:auto-common:1.2.2'
     compileOnly 'com.google.auto.service:auto-service-annotations:1.1.1'
     kapt 'com.google.auto.service:auto-service:1.1.1'
     compileOnly 'net.ltgt.gradle.incap:incap:1.0.0'
     kapt 'net.ltgt.gradle.incap:incap-processor:1.0.0'
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'com.google.truth:truth:1.4.4'
-    testImplementation 'com.google.testing.compile:compile-testing:0.21.0'
+    testImplementation 'com.google.truth:truth:1.4.5'
+    testImplementation 'com.google.testing.compile:compile-testing:0.23.0'
 }
 
 kotlin {

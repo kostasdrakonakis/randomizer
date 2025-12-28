@@ -1,6 +1,5 @@
 package android.app;
 
-import javax.annotation.Nullable;
 import android.os.Bundle;
 
 /**
@@ -9,7 +8,7 @@ import android.os.Bundle;
  */
 public class Activity {
 
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
 
     }
 }
